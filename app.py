@@ -10,7 +10,7 @@ class PremiumPortalBot:
     def __init__(self, cf_clearance):
         self.cf_clearance = cf_clearance
         self.access_token = None
-        self.user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
+        self.user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 SberBrowser/36.0.0.0'
 
     def _parse_nextjs_payload(self, text):
  
@@ -95,7 +95,7 @@ class PremiumPortalBot:
     def get_cookies(self, item_id):
         return json.loads(self._request(f'https://consumer-api.premiumportal.id/extensions/get-cookies/{item_id}'))
 
-CF_CLEARANCE = "eC7K70UfYInJ444ZuRjFoEbR4d_j3tTZ8VAB3RuGwiw-1778714171-1.2.1.1-oQVCqPnW8rEjqkWCXEypIUytYgF.ivp3Lyj3wSZCoD9HnAMpIyU1njBC30PdhL2QoebuBnHDXH3T5wYkfsKeUGyVRrfWpCCW64KZCx_6uQkEDTGZSCBZJ1f28hdWC5DPjTfSba..BO0y3jWMlJWaDT5lWAx1yt2qsyEN3d45nPzQO3J46RcBj57YAFkgA4f5umiT3g9Gh.ymFSGX.eSu_JdWKCvo17xffCJ8z8U2p3p1LcvHejona5_Jz836m6c.DIagGNIk8v79UP4D.cFeBnyJF04vdNuhJwdyh9AvqPSxKsSNXcMQQVemOFbK7IOJS6tW7ytWPXzCZIP74uEL0zdZVwDJ1tySWQVmB2PIsDuqMKP8zIJd5IEg1b8ehb1AOEMq7eyrqwoF9XO4i6nBHFy_NBf_D1yLZOYEtct8pzg"
+CF_CLEARANCE = "ldvF7_tAkbgZgWrr1zF6uVR85AcrSWiUUpbnGmQMrrc-1778756277-1.2.1.1-yb1.hJfyxYLH1kM15Ze1AN_8q38OSacJZM0eckq4FjYm6NNGdnFru2ZyeK1rPq7AIOE1Pm8Jf_cdBMXTixiOwyT6ysxf9qbEV0u6iRSqJu95nmncRZggsiNzqV49z898rDEiLxvNChL5EGbcGxuvOqHhatKYbtivpl2W.MyrrWk6uAu5_HAdrdGG39GXFNif12upBqAuvhaaygRwAbBmKxQeq26gaR0uz5nWlzn.cVpzssJeGlBMTX0AVhoCCM3zJbEI.YG5ZrBwdnF_PEUoJvOMJf_i_IT5tafiltnoKqo6IkhGjJbGNTdWakHEJDcyML8vvZafce6VDwg0cCcYYHhvO8R00fb2TcWgr5PVddJwtfIT446eihCG.5Kgy.a4a.vI.pOZwYRgoA6t5xmn9gtQ_f5JV55LW_0IXN2qoqA"
 EMAIL = "bizdevsg2024@gmail.com"
 PASSWORD = "Garlicbo1#"
 
